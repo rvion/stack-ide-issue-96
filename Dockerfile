@@ -30,4 +30,4 @@ RUN git submodule update --init --recursive
 # (not documented but I guess it's stack related knowledge)
 RUN stack setup
 RUN stack build --dependencies-only
-RUN stack build --copy-bins
+CMD stack build -v --copy-bins
